@@ -1,7 +1,7 @@
 /* @override http://localhost:8888/wireframe/profiles/wireframe/themes/wire/css/style.css?lk9jx6 */
 
 /*
-Title:      Wire master screen styles
+Title:      Wire5 master screen styles
 Author:     Paolo Agostinelli
 Email:      p.agostinelli@gmail.com
 Web:        www.dodorama.com
@@ -35,15 +35,31 @@ h5{
 }
 
 h6{
-  
+  font-size: 1em;
 }
 
 em {
   font-style: italic;
 }
 
-strong {
+b, strong {
   font-weight: bold;
+}
+
+/* 4.LINKS */
+
+a, 
+a:visited {
+
+}
+ 
+a:hover { 
+
+}
+ 
+a:active, 
+a:focus { 
+
 }
 
 /* Lists */
@@ -109,56 +125,10 @@ table .description {
   font-size: 0.83em;
 }
 
-/* Navigation */
-
-#nav,
-#nav ul,
-#nav ul li {
-display: inline;
-}
-
-#nav h2 {
-  display: none;
-}
-
 /* Page Title */
 
 .title-wrapper #page-title {
   float:left
-}
-
-/* Project Node */
-
-.node-project .field-name-field-project-category{
-  padding-left: 16px;
-  background: url(images/tag.png) no-repeat left 3px;
-}
-
-.node-project .field-name-field-project-date {
-  background: url(images/clock.png) no-repeat left;
-  padding-left: 16px;
-}
-
-/* Pager */
-
-.region-content ul.flippy {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-ul.flippy li a{
-  padding: 0;
-  text-align: center;
-  line-height: 3em;
-}
-
-ul.flippy li.previous a{
-  float: left;
-}
-
-ul.flippy li.next a{
-  float: right;
 }
 
 /* Form Elements */
@@ -184,12 +154,7 @@ textarea.form-textarea {
   box-sizing: border-box;
   width: 100%;
 }
-/*input#edit-title.form-text {                                      
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  width: 100%;
-  box-sizing: border-box;
-}*/
+
 textarea.form-textarea {                                      
   line-height: 1.5em;
 }
@@ -226,3 +191,17 @@ fieldset legend {
 .form-type-checkbox .description {
   margin-left: 0;
 }
+
+/* Helpers */
+
+
+/* Image replacement */
+.ir { 
+display : block; 
+text-indent : -999em;
+width: 100px;
+height: 100px;
+overflow : hidden; 
+background-repeat : no-repeat; 
+text-align : left; 
+direction : ltr; }
