@@ -1,0 +1,33 @@
+name = Wire5
+description = Custom HTML5 starter theme for Drupal.
+screenshot  = images/screenshot.png
+engine = phptemplate
+core = 7.x
+
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/drupal.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/fontface.css
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/helper.js
+
+# features[] = logo
+features[] = name
+# features[] = slogan
+# features[] = node_user_picture
+# features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+# features[] = secondary_menu
+
+# regions[sidebar_second] = Second sidebar
+# regions[help] = Help
+# regions[highlighted] = Highlighted
+# regions[header] = Header
+regions[content] = Content
+regions[sidebar_first]  = First sidebar
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 1

@@ -1,0 +1,36 @@
+/* Mobile First Layout */
+
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  min-width: 320px;
+  text-align: center;
+}
+
+#page {
+  text-align: left;
+  width: 94%;
+  margin: 0 auto;
+  /*background-image: url(images/grid.gif);*/
+}
+
+img {
+  width: 100%;
+}
+
+/* 480px */
+
+@media only screen and (min-width: 480px) {
+
+#page {
+  width: 960px;
+  margin: 0 auto;
+}
+
+}
+@media only screen and (min-width: 700px) {
+
+}
+@media only screen and (min-width: 960px) {
+
+}
