@@ -1,4 +1,4 @@
-ABOUT DOLCEVITA
+ABOUT WIRE5
 ---------------
 
 The Wire5 theme is a starter HTML5 theme.
