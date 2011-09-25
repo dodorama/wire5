@@ -70,7 +70,7 @@
 
   <div id="page">
  
-    <header role="banner" class="page" class="clearfix">
+    <header role="banner" class="page clearfix">
       
       <?php if ($title): ?>
         <div id="site-name"><?php print $site_name; ?></div>

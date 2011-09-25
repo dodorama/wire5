@@ -125,10 +125,22 @@ table .description {
   font-size: 0.83em;
 }
 
-/* Page Title */
+/* Tabs */
 
-.title-wrapper #page-title {
-  float:left
+.tabs a {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  background-color: #666;
+  color: #fff;
+}
+
+.tabs a:hover,
+.tabs a.active,
+.tabs a:active {
+  background-color: #000;
+  color: #fff;
 }
 
 /* Form Elements */
@@ -191,8 +203,6 @@ fieldset legend {
 .form-type-checkbox .description {
   margin-left: 0;
 }
-
-/* Helpers */
 
 
 /* Image replacement */

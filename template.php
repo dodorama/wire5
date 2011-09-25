@@ -1,6 +1,6 @@
 <?php
 
-function wire_css_alter(&$css) {
+function wire5_css_alter(&$css) {
   // Remove system.menus.css file.
   unset($css[drupal_get_path('module', 'system') . '/system.menus.css']);
   unset($css[drupal_get_path('module', 'system') . '/system.theme.css']);
@@ -9,7 +9,7 @@ function wire_css_alter(&$css) {
 /**
  * Implementation of preprocess_page().
  */
-function wire_preprocess_page(&$vars) {
+function wire5_preprocess_page(&$vars) {
   // Split primary and secondary local tasks
   $vars['primary_local_tasks'] = menu_primary_local_tasks();
   $vars['secondary_local_tasks'] = menu_secondary_local_tasks();
@@ -21,6 +21,6 @@ function wire_preprocess_page(&$vars) {
 /**
  * Provide a valid, unique HTML ID.
  */
-function wire_preprocess_region(&$variables) {
+function wire5_preprocess_region(&$variables) {
   $variables['region'] = drupal_html_id($variables['region']);
 }

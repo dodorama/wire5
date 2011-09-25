@@ -18,6 +18,20 @@ img {
   width: 100%;
 }
 
+/* Tabs */
+
+.tabs {
+  margin-bottom: 1em;
+}
+
+.tabs a {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0 1em;
+  font-size: 0.6875em;
+  line-height: 2em;
+}
+
 /* 480px */
 
 @media only screen and (min-width: 480px) {

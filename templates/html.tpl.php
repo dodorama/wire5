@@ -58,10 +58,12 @@
   <meta http-equiv="cleartype" content="on">
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+  <!-- respond.js doesn't support @import styles -->
+  <link href="<?php print base_path() . path_to_theme() ?>/css/layout.css" media="screen" rel="stylesheet" type="text/css">
   <?php print $scripts; ?>
   <!-- Enable media queries in IE -->
   <!--[if (lt IE 9) & (!IEMobile)]>
-  <script src="js/respond.min.js"></script>
+  <script src="<?php print base_path() . path_to_theme() ?>/js/plugins/respond.min.js"></script>
   <![endif]-->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
