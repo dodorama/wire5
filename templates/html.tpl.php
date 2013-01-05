@@ -43,29 +43,28 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]><html class="lt-ie9" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>><!--<![endif]-->
 
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
   <meta name="description" content="">
   <meta name="author" content="Paolo Agostinelli">
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <!-- maximum-scale=1 to prevent iOs Scale bug http://filamentgroup.com/examples/iosScaleBug/ -->
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1, maximum-scale=1">
-  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-  <meta http-equiv="cleartype" content="on">
+
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
-  <!-- respond.js doesn't support @import styles -->
-  <link href="<?php print base_path() . path_to_theme() ?>/css/layout.css" media="screen" rel="stylesheet" type="text/css">
   <?php print $scripts; ?>
-  <!-- Enable media queries in IE -->
-  <!--[if (lt IE 9) & (!IEMobile)]>
-  <script src="<?php print base_path() . path_to_theme() ?>/js/plugins/respond.min.js"></script>
-  <![endif]-->
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <!-- HTML5Shiv -->
+  <!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+
+  <!-- respond.js - CSS Aggregation must be activated for respond.js to work -->
+  <!--[if lt IE 9]><script src="js/vendor/respond.js"></script><![endif]-->
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
@@ -74,5 +73,7 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <!--   https://github.com/scottjehl/iOS-Orientationchange-Fix -->
+  <script src="js/ios-orientationchange-fix.js"></script>
 </body>
 </html>

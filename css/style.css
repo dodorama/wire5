@@ -1,11 +1,9 @@
-/* @override http://localhost:8888/wireframe/profiles/wireframe/themes/wire/css/style.css?lk9jx6 */
-
 /*
 Title:      Wire5 master screen styles
 Author:     Paolo Agostinelli
 Email:      p.agostinelli@gmail.com
 Web:        www.dodorama.com
-Copyright:  2011, Paolo Agostinelli.  All rights reserved (please don't re-use without permission).
+Copyright:  2012, Paolo Agostinelli.  All rights reserved (please don't re-use without permission).
 */
 
 /* HTML Elements */
@@ -46,19 +44,28 @@ b, strong {
   font-weight: bold;
 }
 
+hr {
+  border: 1px solid gray;
+  height: 1px;
+}
+
+img {
+  border: 0;
+}
+
 /* 4.LINKS */
 
-a, 
+a,
 a:visited {
 
 }
- 
-a:hover { 
+
+a:hover {
 
 }
- 
-a:active, 
-a:focus { 
+
+a:active,
+a:focus {
 
 }
 
@@ -105,24 +112,60 @@ ul li.leaf {
   list-style-type: square;
 }
 
-/* Tables */
-table {
-  width: 100%;
-  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
-  font-size: 0.75em;
+li.expanded,
+li.collapsed,
+li.leaf {
+  padding: 0.2em 0.5em 0 0; /* LTR */
+  margin: 0;
 }
 
+td.menu-disabled {
+  background: #ccc;
+}
+
+ul.menu {
+  border: none;
+  list-style: none;
+  text-align: left; /* LTR */
+}
+ul.menu li {
+  margin: 0 0 0 0.5em; /* LTR */
+}
+
+/* Item Lists */
+
+.item-list .title {
+  font-weight: bold;
+}
+.item-list ul {
+  margin: 0 0 0.75em 0;
+  padding: 0;
+}
+.item-list ul li {
+  margin: 0 0 0.25em 1.5em; /* LTR */
+  padding: 0;
+}
+
+/* Inline Items */
+.container-inline .form-actions,
+.container-inline.form-actions {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  font-size: 0.75em;
+  border-collapse: collapse;
+}
 tr.odd {
   background-color: #f6f6f6;
 }
-
 th,
 td {
   padding: 0.5em;
-}
-
-table .description {
-  font-size: 0.83em;
 }
 
 /* Tabs */
@@ -143,9 +186,58 @@ table .description {
   color: #fff;
 }
 
+ul.primary {
+}
+ul.primary li {
+  display: inline;
+}
+ul.primary li a {
+}
+ul.primary li.active a {
+}
+ul.primary li a:hover {
+}
+ul.secondary {
+}
+ul.secondary li {
+}
+ul.secondary a {
+}
+ul.secondary a.active {
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+  padding-bottom: 0.5em;
+}
+
+/* Pager */
+
+.item-list .pager {
+  clear: both;
+  text-align: center;
+}
+.item-list .pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: 0.5em;
+}
+.pager-current {
+  font-weight: bold;
+}
+
+/* More Link */
+
+.more-link {
+  text-align: right; /* LTR */
+}
+
 /* Form Elements */
 
 form {
+  margin: 0;
   padding: 0;
 }
 .form-item {
@@ -156,8 +248,21 @@ form {
   margin: 2em 0;
 }
 
+tr.odd .form-item,
+tr.even .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
 input.form-text,
-textarea.form-textarea {                                      
+textarea.form-textarea {
   margin: 0;
   padding: 6px;
   font: 0.75em/1em "Lucida Grande", Lucida, Verdana, sans-serif;
@@ -167,7 +272,7 @@ textarea.form-textarea {
   width: 100%;
 }
 
-textarea.form-textarea {                                      
+textarea.form-textarea {
   line-height: 1.5em;
 }
 
@@ -204,14 +309,37 @@ fieldset legend {
   margin-left: 0;
 }
 
+input.form-checkbox,
+input.form-radio {
+  vertical-align: middle;
+}
+.marker,
+.form-required {
+  color: #f00;
+}
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid red;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
 
 /* Image replacement */
-.ir { 
-display : block; 
+.ir {
+display : block;
 text-indent : -999em;
 width: 100px;
 height: 100px;
-overflow : hidden; 
-background-repeat : no-repeat; 
-text-align : left; 
+overflow : hidden;
+background-repeat : no-repeat;
+text-align : left;
 direction : ltr; }

@@ -1,3 +1,14 @@
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
 /* Mobile First Layout */
 
 body {
@@ -11,7 +22,6 @@ body {
   text-align: left;
   width: 94%;
   margin: 0 auto;
-  /*background-image: url(images/grid.gif);*/
 }
 
 img {
@@ -48,46 +58,46 @@ img {
 @media only screen and (min-width: 960px) {
 
 }
-@media print {  
-* { 
-background : transparent !important; 
-color : black !important; 
-text-shadow : none !important; 
+@media print {
+* {
+background : transparent !important;
+color : black !important;
+text-shadow : none !important;
 filter : none !important;
--ms-filter : none !important; } 
+-ms-filter : none !important; }
 
-a, a:visited { 
-color : #444 !important; 
+a, a:visited {
+color : #444 !important;
 text-decoration : underline; }
 
-a[href]:after { 
+a[href]:after {
 content : " (" attr(href) ")"; }
 
-abbr[title]:after { 
+abbr[title]:after {
 content : " (" attr(title) ")"; }
 
-a[href^="javascript:"]:after, 
-a[href^="#"]:after { 
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
 content : ""; }
-  
-pre, blockquote { 
-border : 1px solid #999; 
+
+pre, blockquote {
+border : 1px solid #999;
 page-break-inside : avoid; }
 
-thead { 
+thead {
 display : table-header-group; }
 
-tr, img { 
+tr, img {
 page-break-inside : avoid; }
 
-@page { 
+@page {
 margin : .5cm; }
 
-p, h2, h3 { 
-orphans : 3; 
+p, h2, h3 {
+orphans : 3;
 widows : 3; }
 
-h2, h3 { 
+h2, h3 {
 page-break-after : avoid; }
 
 /* Drupal Elements */

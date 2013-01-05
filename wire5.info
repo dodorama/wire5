@@ -6,24 +6,49 @@ core = 7.x
 
 stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/drupal.css
-stylesheets[all][] = css/fontface.css
+
+; Override system's styling.
+stylesheets[all][] = system.theme.css
+stylesheets[all][] = system.menus.css
+
+stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/style.css
 
-# features[] = logo
+; FEATURES - ENABLED
+
 features[] = name
-# features[] = slogan
-# features[] = node_user_picture
-# features[] = comment_user_picture
 features[] = favicon
 features[] = main_menu
-# features[] = secondary_menu
 
-# regions[sidebar_second] = Second sidebar
-# regions[help] = Help
-# regions[highlighted] = Highlighted
-# regions[header] = Header
+; FEATURES - DISABLED
+
+; features[] = logo
+; features[] = slogan
+; features[] = node_user_picture
+; features[] = comment_user_picture
+; features[] = secondary_menu
+
+; CORE REGIONS - DISABLED
+
+;regions[highlighted] = Highlighted
+;regions[help] = Help
+;regions[header] = Header
+;regions[sidebar_second] = Sidebar Second
+;regions[footer] = Footer
+
+; CORE REGIONS - REQUIRED
+
+regions[page_top] = Page Top
 regions[content] = Content
-regions[sidebar_first]  = First sidebar
+regions[page_bottom] = Page Bottom
+
+; CORE REGIONS
+
+regions[sidebar_first] = Sidebar First
 regions[footer] = Footer
 
-settings[shortcut_module_link] = 1
+
+; To make this sub-theme an admin theme with shortcut links next to titles,
+; uncomment the line below.
+
+;settings[shortcut_module_link]    = 1
