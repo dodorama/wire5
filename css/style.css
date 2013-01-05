@@ -1,3 +1,7 @@
+/* @override 
+	http://localhost:8888/drupal7/sites/all/themes/wire5/css/style.css?mg5uvh
+	http://localhost:8888/drupal7/sites/all/themes/wire5/css/style.css?mg5xxm */
+
 /*
 Title:      Wire5 master screen styles
 Author:     Paolo Agostinelli
@@ -7,6 +11,10 @@ Copyright:  2012, Paolo Agostinelli.  All rights reserved (please don't re-use w
 */
 
 /* HTML Elements */
+
+body {
+	color: #222222;
+}
 
 p {
   margin: 1em 0;
@@ -53,20 +61,22 @@ img {
   border: 0;
 }
 
-/* 4.LINKS */
+/* Links */
 
 a,
 a:visited {
+  color: #2ba6cb;
+  text-decoration: none;
 
 }
 
 a:hover {
-
+  color: #2795b6;
 }
 
 a:active,
 a:focus {
-
+  color: #2795b6;
 }
 
 /* Lists */
@@ -94,7 +104,8 @@ dt {
 ul.inline,
 ul.links.inline {
   display: inline;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 ul.inline li {
   display: inline;
@@ -151,6 +162,18 @@ ul.menu li {
 .container-inline.form-actions {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Grid Item List*/
+
+ul.grid {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.grid-item-title {
+	font-weight: normal;
 }
 
 /* Tables */
@@ -226,6 +249,28 @@ ul.secondary a.active {
 }
 .pager-current {
   font-weight: bold;
+}
+
+/*Page Title*/
+
+#site-name a {
+	color: #222222;
+	text-decoration: none;
+}
+
+#site-name a:hover {
+	color: #666;
+}
+
+/*Main Navigation*/
+
+nav.page a {
+	color: #222222;
+	text-decoration: none;
+}
+
+nav.page a:hover {
+	color: #666;
 }
 
 /* More Link */

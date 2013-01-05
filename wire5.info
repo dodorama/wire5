@@ -5,7 +5,6 @@ engine = phptemplate
 core = 7.x
 
 stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/drupal.css
 
 ; Override system's styling.
 stylesheets[all][] = system.theme.css
